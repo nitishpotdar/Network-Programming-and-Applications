@@ -1,0 +1,46 @@
+# CMPE207_Lab01Q2
+
+The UDP Client program to print the time fetched from a daytime server.
+
+Follow the below steps to run the UDP client program.
+
+1: Use the command -> cd <Directory name>; to go to the directory where the file is stored.
+
+2: Run the makefile using the command -> makefile
+
+3: Run the command -> ./UDPDaytime.o to run the client program.
+
+4: The Daytime server will send the time which will be printed by the client program on the terminal.
+
+
+Test Case:
+After compiling the code, run the UDPDaytime.o executable on the terminal.
+
+
+Scenario:	Various Daytime Server and their corresponding 
+		time will be displayed by our client program.
+ 
+Actual output:	$ ./UDPDaytime.o 129.6.15.30
+		Tue Oct  3 19:22:00 2017
+
+		$ ./UDPDaytime.o 98.175.203.200
+		Tue Oct  3 19:22:48 2017
+
+		$ ./UDPDaytime.o wwv.nist.gov
+		Tue Oct  3 19:23:13 2017
+
+Expected output:$ ./UDPDaytime.o 129.6.15.30
+		Tue Oct  3 19:22:00 2017
+
+		$ ./UDPDaytime.o 98.175.203.200
+		Tue Oct  3 19:22:48 2017
+
+		$ ./UDPDaytime.o wwv.nist.gov
+		Tue Oct  3 19:23:13 2017
+
+Result:		Pass
+
+		Pass
+
+		Pass
+

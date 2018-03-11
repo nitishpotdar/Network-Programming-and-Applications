@@ -1,0 +1,31 @@
+# CMPE207_Lab01Q4
+
+The TCP Client Server program will help a client request for a decremented value of an integer value. The port number is fetched from the command line argument separated by a blank space during running the compiled executable.
+Follow the below steps to run the TCP client and server program.
+1: Use command -> cd <Directory name> ;to go to the directory where the file is stored.
+2: Run the makefile using command -> make.
+3: Run the command -> ./server.o portnumber to run the server side.
+4: Run the command -> ./client.o portnumber to run the client side on a separate terminal.
+5: Enter the numeric that is to be decremented on the client window.
+6: The Server will be sending the decremented numeric as the output of the question. 
+
+Test Case:
+After compiling the code, run the server.o and client.o executables on different terminal windows.
+Terminal window 1
+./server.o 4547
+Terminal Window 2
+./client.o 4547
+
+Scenario:	Client send an integer and the server 
+		decrements the value by 1 and sends it 
+		back to the client. 
+
+Actual output:	Please enter a numeric digit: 45
+		Value received from the server after decrementing is 44
+
+Expected output: Please enter a numeric digit: 45
+		 Value received from the server after decrementing is 44
+
+Result:	Pass
+
+*The program takes port number as a command line argument (2nd argument) separated by a blank space.
